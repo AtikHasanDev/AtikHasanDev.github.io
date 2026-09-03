@@ -4,7 +4,7 @@ A single-page personal portfolio site featuring an interactive resume, animated 
 
 **🔗 Live Site:** [atikhasandev.github.io](https://atikhasandev.github.io/)
 
-![Portfolio preview](./img/portfolio/1.jpg)
+![Portfolio preview](./img/Screenshot.png)
 
 
 ---
