@@ -1,77 +1,24 @@
-# Atik Hasan — Personal Portfolio & Resume Site
+# Atik Hasan's portfolio
 
-A single-page personal portfolio site featuring an interactive resume, animated skill bars, a filterable project gallery, and a working contact form.
+A static developer portfolio retaining the original N5 theme, indigo accents, Lora / Roboto Mono typography, and inset frame.
 
-**🔗 Live Site:** [atikhasandev.github.io](https://atikhasandev.github.io/)
+## Preview locally
 
-![Portfolio preview](./img/Screenshot.png)
+Run `node scripts/preview.cjs` from this folder, then open http://127.0.0.1:8000.
 
+No dependency installation or build step is required. The old PHP contact endpoint is unused; email and phone links work on static hosting.
 
----
+## Content
 
-## 📌 Overview
+- `index.html`: introduction, skills, education, projects, and contact details.
+- `css/portfolio.css`: responsive layout layered over the original theme.
+- `js/script.js`: mobile menu and active section tracking during native scrolling.
+- `assets/Atik_Hasan_Resume.docx`: downloadable resume.
+- `scripts/build-project-pages.cjs`: project content and detail page generator. Run it after changing project descriptions.
+- `img/portfolio/`: screenshots of the projects.
 
-This is my personal developer portfolio — a single-page site with smooth section transitions that presents who I am, my education, my skillset, and a gallery of my work, plus a way to get in touch directly through the page.
+Project descriptions are based on the supplied resume and project READMEs. Development challenges describe technical concerns reflected in the implementation; future improvements are suggestions. The hero uses an AI-edited professional portrait based on the existing GitHub profile photo.
 
-## 🛠️ Built With
+## Publish
 
-- **HTML5**
-- **CSS3**
-- **[Bootstrap](https://getbootstrap.com/)** — responsive grid & components
-- **jQuery** — DOM interactions and section toggling
-- **[Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/)** — carousel/slider functionality
-- **[Magnific Popup](https://dimsemenov.com/plugins/magnific-popup/)** — portfolio image lightbox
-- **[Linea Icons](https://linea.io/)** & **[Ionicons](https://ionic.io/ionicons)** — iconography
-- **PHP** — contact form backend (`mail.php`)
-
-## ✨ Features
-
-- **Single-page navigation** with animated section transitions (no page reloads)
-- **About section** with a personal intro and a quick-facts list
-- **Animated skill bars** for technical and language proficiency
-- **Education timeline** listing academic background
-- **Filterable portfolio gallery** (All / Web / Tech / Photography) with a lightbox popup per project
-- **Contact form** with client-side validation, submitting via PHP to email
-- Fully responsive across desktop, tablet, and mobile
-
-## 📦 Dependencies
-
-This project has no package manager — all libraries are vendored directly inside the repo:
-
-| Dependency | Purpose |
-|---|---|
-| Bootstrap | Responsive layout grid |
-| jQuery | DOM manipulation, plugin support |
-| Owl Carousel | Slider components |
-| Magnific Popup | Portfolio lightbox |
-| Validator.js | Contact form validation |
-| Linea Icons / Ionicons | Icon sets |
-
-## 🚀 Run Locally
-
-This is a static frontend with a PHP contact form, so you'll need a local PHP server for the contact form to work (the rest of the site runs fine without it).
-
-1. Clone the repository
-   ```bash
-   git clone https://github.com/AtikHasanDev/AtikHasanDev.github.io.git
-   ```
-2. Navigate into the project folder
-   ```bash
-   cd AtikHasanDev.github.io
-   ```
-3. **Option A — Static preview only** (no contact form):
-   Open `index.html` directly in your browser, or use VS Code's **Live Server** extension.
-
-4. **Option B — Full functionality (including contact form)**:
-   Run PHP's built-in server from the project folder:
-   ```bash
-   php -S localhost:8000
-   ```
-   Then visit `http://localhost:8000` in your browser.
-
-## 🔗 Links
-
-- **Live Site:** [atikhasandev.github.io](https://atikhasandev.github.io/)
-- **Repository:** [github.com/AtikHasanDev/AtikHasanDev.github.io](https://github.com/AtikHasanDev/AtikHasanDev.github.io)
-- **LinkedIn:** [linkedin.com/in/atikhasan-](https://www.linkedin.com/in/atikhasan-)
-- **Facebook:** [facebook.com/atikhasan.inbox](https://www.facebook.com/atikhasan.inbox)
+Commit and push reviewed changes to the branch configured for GitHub Pages. Check the repository's Pages deployment before sharing the public link.
